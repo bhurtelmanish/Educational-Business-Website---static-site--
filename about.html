@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Sega Computer Link - Home</title>
+    <link rel="shortcut icon" href="/assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="assets/index.js" defer></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles for Swiper -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    #swiper {
+      width: 100%;
+      height: 25rem;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media (max-width: 1030px) {
+    .swiper{
+        height: 22rem !important;
+    }
+    }
+
+    @media (max-width: 400px) {
+      #about-us-header {
+    font-size: 1.7rem;
+  }
+  #about-desc {
+    margin-top: 0.5rem !important;
+  }
+    }
+  </style>
+</head>
+<body>
+   <div id="about">
+       <!-- Navbar -->
+       <div class="navbar">
+           <div class="wrapper">
+               <a href="/home.html" class="link">
+                   <div class="logo">
+                       <img src="./assets/images/logo.png" alt="">
+                       <div class="logo-title">Sega Link</div>
+                   </div>
+               </a>
+
+                <div class="links-container">
+                  <ul class="links">
+                      <li><a class="link " href="/home.html">Home</a></li>
+                      <li><a class="link link-active" href="/about.html">About</a></li>
+                      <li><a class="link" href="/courses.html">Courses</a></li>
+                      <li><a class="link" href="/contact.html">Contact</a></li>
+                  </ul>
+                </div>
+
+              <div class="navbar-right-section">
+                  <a href="" class="register link"><i class="fa-solid fa-user"></i><div class="register-title">Register</div></a>
+                  <i class="link fa-solid fa-moon "></i>
+                  <i class="link fa-solid fa-bars-staggered"></i>
+              </div>
+           </div>
+       </div>
+
+       <div class="hero">
+        
+         <!-- Swiper -->
+         <div class="swiper mySwiper" id="swiper">
+           <div class="swiper-wrapper">
+
+             <div class="swiper-slide" id="swiper-slide1">
+              <div class="overlay overlay1">
+                <div class="landing-contents">
+                  <h4 class="landing-title" id="about-us-header">About Us</h4>
+                  <p class="landing-description" id="about-desc">Take the first step to your journey to success with us.</p>
+                </div>
+              </div>
+            </div>
+           </div>
+           <!-- <div class="swiper-button-next"></div>
+           <div class="swiper-button-prev"></div>
+           <div class="swiper-pagination"></div> -->
+           
+         </div>
+         
+         <div class="custom-shape-divider-bottom-1702999017">
+             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+             </svg>
+         </div>
+         
+       
+      </div>
+
+      <div class="about-us-section">
+          <div class="about-card-container">
+            <div class="about-card">
+                <div class="about-card-upper">
+                    <div class="about-icon-container">
+                       <i class="fa-solid fa-certificate about-icon"></i>
+                    </div>
+                   <div class="about-card-header">
+                    <span>Our</span> 
+                    <br/> 
+                    Mission
+                   </div>
+                </div>
+                <div class="about-card-desc">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet.</div>
+            </div>
+
+            <div class="about-card">
+                <div class="about-card-upper">
+                    <div class="about-icon-container">
+                        <i class="fa-solid fa-book about-icon"></i>
+                    </div>
+                   <div class="about-card-header">
+                    <span>Our</span> 
+                    <br/> 
+                    Vision
+                   </div>
+                </div>
+                <div class="about-card-desc">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet.</div>
+            </div>
+
+            <div class="about-card">
+                <div class="about-card-upper">
+                    <div class="about-icon-container">
+                        <i class="fa-solid fa-graduation-cap about-icon"></i>
+                    </div>
+                   <div class="about-card-header">
+                    <span>Our</span> 
+                    <br/> 
+                    Goal
+                   </div>
+                </div>
+                <div class="about-card-desc">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet.</div>
+            </div>
+         </div>
+
+         <div class="about-us-main-section">
+            <div class="facilities-left-section" id="a-u">
+                <div class="t1" id="about-second-header1">About Us</div>
+                <div class="t2" id="about-second-header2">Welcome to our coursing - all available courses</div>
+                <div class="facilities-desc" id="about-s-d">Curabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est. Quisque ut lectus consequat, venenatis eros et, commodo risus. Nullam sit amet laoreet elit. Suspendisse non magna a velit efficitur.<br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas ab qui impedit, libero illo quia sequi quibusdam iure. Error minus quod reprehenderit quae dolor velit soluta animi voluptate </div>
+                <!-- <a href=""><button class="landing-button">Discover More</button></a> -->
+             </div>
+
+             <img src="./assets/images/about-us.jpg" alt="" class="about-us-image">
+         </div>
+      </div>
+      <a href="#about"><div class="up-arrow-container"><i class="fa-solid fa-angle-up"></i></div></a>
+
+
+      <div class="progress-section">
+         <div class="progress-contents">
+            <div class="progress-bar-container">
+
+                <div class="progress-bars">
+                    <span class="progress-title">Web Development</span>
+                    <div class="progress-bar-line">
+                        <div class="progree-bar-limit limit1"></div>
+                        <div class="progress-bar-percentage pp1">90%</div>
+                    </div>
+                </div>
+
+                <div class="progress-bars">
+                    <span class="progress-title">Figma Illustrations</span>
+                    <div class="progress-bar-line">
+                        <div class="progree-bar-limit limit2"></div>
+                        <div class="progress-bar-percentage pp2">80%</div>
+                    </div>
+                </div>
+
+                <div class="progress-bars">
+                    <span class="progress-title">Adobe Photoshop</span>
+                    <div class="progress-bar-line">
+                        <div class="progree-bar-limit limit3"></div>
+                        <div class="progress-bar-percentage pp3">60%</div>
+                    </div>
+                </div>
+
+                <div class="progress-bars">
+                    <span class="progress-title">Web Development</span>
+                    <div class="progress-bar-line">
+                        <div class="progree-bar-limit limit4"></div>
+                        <div class="progress-bar-percentage pp4">70%</div>
+                    </div>
+                </div>
+
+                <div class="progress-bars">
+                    <span class="progress-title">Web Development</span>
+                    <div class="progress-bar-line">
+                        <div class="progree-bar-limit limit5"></div>
+                        <div class="progress-bar-percentage pp5">60%</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="facilities-left-section" id="l-section">
+                <div class="t1">Progress Bar</div>
+                <div class="t2">What you have in our Popular Courses?</div>
+                <div class="facilities-desc" id="f-desc">Curabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est. Quisque ut lectus consequat, venenatis eros et, commodo risus. Nullam sit amet laoreet elit. Suspendisse non magna a velit efficitur.</div>
+                <a href=""><button class="landing-button" id="l-b">Discover More</button></a>
+             </div>
+
+         </div>
+      </div>
+
+
+
+
+
+
+      <div class="footer-section">
+        <div class="footer-contents">
+
+        <div class="footer-section1">
+          <ul class="footer-section" id="footer-section-1">
+            <li class="footer-header">Contact Info</li>
+            <li class="footer-links">Address: Amarsingh chowk - 11, Pokhara</li>
+            <li class="footer-links">Phone: 061-589511</li>
+            <li class="footer-links">Email: mahendra@sega.computerlink.com.np</li>
+            <span class="footer-media-links">
+              <i class="fa-brands fa-facebook" id="facebook-icon"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-discord"></i>
+            </span>
+          </ul>
+
+
+          <ul class="footer-section">
+            <li class=" footer-header">Company</li>
+            <li class="footer-links">About Company</li>
+            <li class="footer-links">Latest Blog posts</li>
+            <li class="footer-links">Become a teacher</li>
+            <li class="footer-links">Our Courses</li>
+            <li class="footer-links">Get in touch</li>
+          </ul>
+        </div>
+          <ul class="footer-section">
+            <li class=" footer-header">Programs</li>
+            <li class="footer-links">Training Center</li>
+            <li class="footer-links">Documentation</li>
+            <li class="footer-links">Release Status</li>
+            <li class="footer-links">Customers</li>
+            <li class="footer-links">Help Center</li>
+          </ul>
+          
+        </div>
+        
+        <hr  class="new1"/>
+        <div class="right-reserve">
+          © 2024 Sega Computer Link. All rights reserved.
+        </div>
+      </div>
+      </div>
+   
+
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
