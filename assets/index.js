@@ -60,7 +60,7 @@ courseLinks.forEach((courseLink , courseLinkIndex) => {
 })
 
 
-//Dark Mode theme
+//Dark Mode theme(not used currently in the site)
 const lightContentList1 = document.querySelectorAll('.light-content1');
 const themeButton = document.querySelectorAll('.fa-moon')[0];
 

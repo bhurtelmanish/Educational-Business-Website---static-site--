@@ -385,6 +385,10 @@ a.link-active {
   .card{
     width:auto !important;
   }
+  .feature-courses-section{
+    margin-top: 0 !important;
+    padding-top: 2rem !important;
+  }
 }
 
 @media (max-width: 510px) {
@@ -430,6 +434,10 @@ a.link-active {
   }
   .fa-moon {
     font-size: 1.3rem;
+  }
+  .feature-courses-section{
+    margin-top: 0 !important;
+    padding-top: 1.5rem !important;
   }
 }
 
