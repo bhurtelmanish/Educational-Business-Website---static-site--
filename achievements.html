@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Sega Computer Link - Home</title>
+    <link rel="shortcut icon" href="/assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="assets/index.js" defer></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles for Swiper -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    #swiper {
+      width: 100%;
+      height: 25rem;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media (max-width: 1030px) {
+    .swiper{
+        height: 22rem !important;
+    }
+    }
+
+    @media (max-width: 400px) {
+      #about-us-header {
+    font-size: 1.7rem;
+  }
+  #about-desc {
+    margin-top: 0.5rem !important;
+  }
+    }
+  </style>
+</head>
+<body>
+   <div id="courses">
+       <!-- Navbar -->
+       <div class="navbar">
+        <div class="wrapper">
+            <a href="/home.html" class="link">
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="">
+                    <div class="logo-title">Sega Link</div>
+                </div>
+            </a>
+
+             <div class="links-container">
+               <ul class="links">
+                   <li><a class="link " href="/home.html">Home</a></li>
+                   <li><a class="link" href="/about.html">About</a></li>
+                   <li><a class="link" href="/courses.html">Courses</a></li>
+                   <li><a class="link link-active" href="/achievements.html">Achievements</a></li>
+               </ul>
+             </div>
+
+           <div class="navbar-right-section">
+             <a href="/contact.html"><button class="nav-button">Contact</button></a>
+               <!-- <i class="link fa-solid fa-moon "></i> -->
+               <i class="link fa-solid fa-bars-staggered"></i>
+           </div>
+        </div>
+    </div>
+       <div class="hero">
+         <!-- Swiper -->
+         <div class="swiper mySwiper" id="swiper">
+           <div class="swiper-wrapper">
+
+             <div class="swiper-slide" id="swiper-slide1">
+              <div class="overlay overlay1">
+                <div class="landing-contents">
+                  <h4 class="landing-title" id="about-us-header">Our Achievements</h4>
+                  <p class="landing-description" id="about-desc">Take the first step to your journey to success with us.</p>
+                </div>
+              </div>
+            </div>
+        </div>         
+         </div>
+         <div class="custom-shape-divider-bottom-1702999017">
+             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+             </svg>
+         </div>
+      </div>
+      <a href="#courses"><div class="up-arrow-container"><i class="fa-solid fa-angle-up"></i></div></a>
+    </div>
+
+
+   
+
+
+
+
+
+
+     <div class="footer-section">
+      <div class="footer-contents">
+
+      <div class="footer-section1">
+        <ul class="footer-section" id="footer-section-1">
+          <li class="footer-header">Contact Info</li>
+          <li class="footer-links">Address: Pokhara-10, Amarsingh Chowk</li>
+          <li class="footer-links">Phone: +977-61-578115</li>
+          <a href="mailto:segacomputer15@gmail.com" ><li class="footer-links">Email: segacomputer15@gmail.com</li></a>
+          <span class="footer-media-links">
+            <i class="fa-brands fa-facebook" id="facebook-icon"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-discord"></i>
+          </span>
+        </ul>
+
+
+        <ul class="footer-section">
+          <li class=" footer-header">Company</li>
+          <a href="/about.html"><li class="footer-links">About Sega</li></a>
+          <a href="/achievements.html"><li class="footer-links">Achievements</li></a>
+          <a href="/courses.html"><li class="footer-links">Our Courses</li></a>
+          <a href="/contact.html"><li class="footer-links">Get in touch</li></a>
+        </ul>
+      </div>
+        <ul class="footer-section">
+          <li class=" footer-header">Programs</li>
+          <li class="footer-links">Quiz Competitions</li>
+          <li class="footer-links">Typing Competitions</li>
+          <li class="footer-links">Project Presentation</li>
+          <li class="footer-links"></li>
+          <li class="footer-links">Picnic Programs</li>
+        </ul>
+        
+      </div>
+      
+      <hr  class="new1"/>
+      <div class="right-reserve">
+        © 2024 Sega Computer Link. All rights reserved.
+      </div>
+    </div>
+    </div>
+   
+
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>

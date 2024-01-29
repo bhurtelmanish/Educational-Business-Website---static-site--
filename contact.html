@@ -12,6 +12,8 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    
+
   <!-- Demo styles for Swiper -->
   <style>
     html,
@@ -70,30 +72,30 @@
    <div id="courses">
        <!-- Navbar -->
        <div class="navbar">
-           <div class="wrapper">
-               <a href="/home.html" class="link">
-                   <div class="logo">
-                       <img src="./assets/images/logo.png" alt="">
-                       <div class="logo-title">Sega Link</div>
-                   </div>
-               </a>
-
-                <div class="links-container">
-                  <ul class="links">
-                      <li><a class="link" href="/home.html">Home</a></li>
-                      <li><a class="link" href="/about.html">About</a></li>
-                      <li><a class="link" href="/courses.html">Courses</a></li>
-                      <li><a class="link link-active" href="/contact.html">Contact</a></li>
-                  </ul>
+        <div class="wrapper">
+            <a href="/home.html" class="link">
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="">
+                    <div class="logo-title">Sega Link</div>
                 </div>
+            </a>
 
-              <div class="navbar-right-section">
-                  <a href="" class="register link"><i class="fa-solid fa-user"></i><div class="register-title">Register</div></a>
-                  <i class="link fa-solid fa-moon "></i>
-                  <i class="link fa-solid fa-bars-staggered"></i>
-              </div>
+             <div class="links-container">
+               <ul class="links">
+                   <li><a class="link " href="/home.html">Home</a></li>
+                   <li><a class="link" href="/about.html">About</a></li>
+                   <li><a class="link" href="/courses.html">Courses</a></li>
+                   <li><a class="link" href="/achievements.html">Achievements</a></li>
+               </ul>
+             </div>
+
+           <div class="navbar-right-section">
+             <a href="/contact.html"><button class="nav-button">Contact</button></a>
+               <!-- <i class="link fa-solid fa-moon "></i> -->
+               <i class="link fa-solid fa-bars-staggered"></i>
            </div>
-       </div>
+        </div>
+    </div>
        <div class="hero">
          <!-- Swiper -->
          <div class="swiper mySwiper" id="swiper">
@@ -135,7 +137,7 @@
                         <i class="fa-solid fa-location-dot"></i>
                         <div class="contact-info-container">
                             <div class="c-info-header">Our head office address</div>
-                            <div class="c-info-desc">Address here, Amarsingh chowk - 11, Pokhara</div>
+                            <div class="c-info-desc">Address here, Pokhara-11, Amarsingh Chowk</div>
                         </div>
                     </div>
 
@@ -143,7 +145,7 @@
                         <i class="fa-solid fa-phone"></i>
                         <div class="contact-info-container">
                             <div class="c-info-header">Call for help</div>
-                            <div class="c-info-desc">+977 9864890500</div>
+                            <div class="c-info-desc">+977-61-578115</div>
                         </div>
                     </div>
 
@@ -151,25 +153,29 @@
                         <i class="fa-regular fa-envelope"></i>
                         <div class="contact-info-container">
                             <div class="c-info-header">Contact with our support</div>
-                            <div class="c-info-desc">coursing@example.com</div>
+                            <div class="c-info-desc">segacomputer15@gmail.com</div>
                         </div>
                     </div>
                 </div>
              </div>
 
-             <form class="right-section-contact">
+             <form action="" id="contactForm" class="right-section-contact light-content3" >
                 <div class="con-head">Write to us</div>
                 <div class="first-credentials">
-                    <input type="text" name="name" class="name form-content" placeholder="Name">
-                    <input type="email" name="email" class="email form-content" placeholder="Email">
+                    <input type="text" id="name" name="name" class="name form-content light-content1" placeholder="Name" required>
+                    <input type="email" id="email" name="email" class="email form-content light-content1" placeholder="Email" required>
                 </div>
-                <input type="text" name="subject" class="subject form-content" placeholder="Subject">
-                <textarea name="textarea" class="textarea form-content"  rows="10" placeholder="Message"></textarea>
-                <a href=""><button class="landing-button" id="contact-btn">Send Message</button></a>
+                <input type="text" id="subject" name="subject" class="subject form-content light-content1" placeholder="Subject" required>
+                <textarea name="textarea" id="textarea" class="textarea form-content light-content1"  rows="10" placeholder="Message" required></textarea>
+                <a href=""><input type="submit" class="landing-button" name="submit" value="Send Message" id="contact-btn"></input></a>
              </form>
         </div>
      </div>
 
+     <div class="alert">
+       <div class="top">Message Sent Successfully!!</div>
+       <button class="go-back-btn landing-button" id="go-back-main-btn">Go Back</button>
+     </div>
 
 
      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3516.045703950715!2d83.9980721753423!3d28.205923975900404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595c8d5fc1151%3A0xd8bc8278c5c32337!2sSEGA%20Computer%20Link!5e0!3m2!1sen!2snp!4v1704804196894!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="contact-map"></iframe>
@@ -184,9 +190,9 @@
         <div class="footer-section1">
           <ul class="footer-section" id="footer-section-1">
             <li class="footer-header">Contact Info</li>
-            <li class="footer-links">Address: Amarsingh chowk - 11, Pokhara</li>
-            <li class="footer-links">Phone: 061-589511</li>
-            <li class="footer-links">Email: mahendra@sega.computerlink.com.np</li>
+            <li class="footer-links">Address: Pokhara-10, Amarsingh Chowk</li>
+            <li class="footer-links">Phone: +977-61-578115</li>
+            <a href="mailto:segacomputer15@gmail.com" ><li class="footer-links">Email: segacomputer15@gmail.com</li></a>
             <span class="footer-media-links">
               <i class="fa-brands fa-facebook" id="facebook-icon"></i>
               <i class="fa-brands fa-instagram"></i>
@@ -198,20 +204,19 @@
 
           <ul class="footer-section">
             <li class=" footer-header">Company</li>
-            <li class="footer-links">About Company</li>
-            <li class="footer-links">Latest Blog posts</li>
-            <li class="footer-links">Become a teacher</li>
-            <li class="footer-links">Our Courses</li>
-            <li class="footer-links">Get in touch</li>
+            <a href="/about.html"><li class="footer-links">About Sega</li></a>
+            <a href="/achievements.html"><li class="footer-links">Achievements</li></a>
+            <a href="/courses.html"><li class="footer-links">Our Courses</li></a>
+            <a href="/contact.html"><li class="footer-links">Get in touch</li></a>
           </ul>
         </div>
           <ul class="footer-section">
             <li class=" footer-header">Programs</li>
-            <li class="footer-links">Training Center</li>
-            <li class="footer-links">Documentation</li>
-            <li class="footer-links">Release Status</li>
-            <li class="footer-links">Customers</li>
-            <li class="footer-links">Help Center</li>
+            <li class="footer-links">Quiz Competitions</li>
+            <li class="footer-links">Typing Competitions</li>
+            <li class="footer-links">Project Presentation</li>
+            <li class="footer-links"></li>
+            <li class="footer-links">Picnic Programs</li>
           </ul>
           
         </div>
@@ -227,5 +232,9 @@
 
     <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Firebase -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="/assets/form.js"></script>
 </body>
 </html>

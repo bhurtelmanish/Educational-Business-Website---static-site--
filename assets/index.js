@@ -47,3 +47,26 @@ bars.addEventListener('click', ()=>{
 })
 
 
+//Course Detail Selection
+const courseLinks = document.querySelectorAll('.course-links');
+const courseDescs = document.querySelectorAll('.course-detail-desc');
+
+courseLinks.forEach((courseLink , courseLinkIndex) => {
+  courseLink.addEventListener('click', ()=>{
+    courseDescs.forEach((courseDesc , courseDescIndex) => {
+      courseDesc.style.display = courseLinkIndex === courseDescIndex ? 'block' : 'none';
+    })
+  });
+})
+
+
+//Dark Mode theme
+const lightContentList1 = document.querySelectorAll('.light-content1');
+const themeButton = document.querySelectorAll('.fa-moon')[0];
+
+themeButton.addEventListener('click', () => {
+  lightContentList1.forEach(content=>{
+    content.classList.toggle('dark-mode');
+  })
+});
+
