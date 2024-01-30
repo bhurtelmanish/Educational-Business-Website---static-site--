@@ -40,7 +40,7 @@ body {
 }
 
 #home {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--lightTheme1);
   height: auto;
   width: 100vw;
   font-family: var(--bodyFont);
@@ -62,7 +62,7 @@ body {
 /* Navbar Color change while scroll */
 .scrolled {
   background-color: var(--lightTheme1);
-  height: 80px;
+  height:80px;
   box-shadow: 0px 0px 8px rgb(227, 226, 226);
   border-bottom: none;
 }
@@ -83,13 +83,20 @@ body {
 }
 
 .logo-title {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   font-weight: 500;
-  font-family: var(--landingPageFont);
+  font-family: var(--bodyFont2);
+  font-size: 2.3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-title > .logo-title-child{
+  font-size: 17px;
 }
 
 .logo > img {
-  height: 3rem;
+  height: 5rem;
 }
 
 .logo {
@@ -319,6 +326,10 @@ a.link-active {
 }
 
 @media (max-width: 1030px) {
+  #award-gallery-title{
+    padding-top: 3rem;
+    margin-bottom: 2rem !important;
+  }
   .links-container {
     background-color: rgba(31, 31, 31, 0.92);
     width: 100vw;
@@ -358,7 +369,9 @@ a.link-active {
   .fa-bars-staggered {
     display: block !important;
   }
-
+  .gallery {
+    max-width: calc(var(--maxWidth) - 500px) !important;
+  }
 
   /* Featured Courses Section */
   .feature-cards-container{
@@ -373,6 +386,9 @@ a.link-active {
 }
 
 @media (max-width: 780px) {
+  .gallery {
+    max-width: calc(var(--maxWidth) - 700px) !important;
+  }
   .wrapper {
     max-width: calc(var(--maxWidth) - 700px);
   }
@@ -389,11 +405,7 @@ a.link-active {
     margin-top: 0 !important;
     padding-top: 2rem !important;
   }
-  .nav-button{
-    height: auto;
-    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-    width:auto;
-  }
+
 }
 
 @media (max-width: 510px) {
@@ -404,9 +416,6 @@ a.link-active {
   .navbar {
     padding: 0 1rem;
   }
-  .logo-title {
-    font-size: 1.5rem;
-  }
   .logo > img {
     height: 2.5rem;
   }
@@ -416,9 +425,13 @@ a.link-active {
   }
   .nav-button{
     height: auto;
-    padding: 0.3rem 1.2rem 0.3rem 1.2rem;
+    padding: 0.6rem 1.4rem 0.6rem 1.4rem;
     font-size: 0.8rem;
     width:auto;
+  }
+  .gallery {
+    padding-right:1rem;
+    padding-left:1rem;
   }
 }
 
@@ -449,12 +462,12 @@ a.link-active {
     margin-top: 0 !important;
     padding-top: 1.5rem !important;
   }
-  .nav-button{
+  /* .nav-button{
     height: auto;
-    padding: 0.3rem 1rem 0.3rem 1rem;
+    padding: 0.4rem 1rem 0.4rem 1rem;
     font-size: 0.8rem;
     width:auto;
-  }
+  } */
 }
 
 .feature-courses-section {
@@ -2145,4 +2158,56 @@ hr.new1 {
     padding:2rem 1rem !important;
     font-size: 1.2rem;
   }
+}
+
+
+
+
+
+/* Achievement page */
+
+.gallery-container{
+  width:100%;
+  height: auto;
+  background-color: var(--lightTheme2);
+}
+img.images-gallery {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+  /* opacity: 0.3; */
+}
+.gallery {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+  max-width: var(--maxWidth);
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.gallery > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.gallery .tall {
+  grid-row: span 2;
+}
+
+
+
+
+#award-gallery-title {
+  text-align: center;
+  margin-bottom: 3rem;
 }

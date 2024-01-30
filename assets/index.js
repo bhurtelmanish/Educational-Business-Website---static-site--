@@ -20,19 +20,19 @@ var swiper = new Swiper(".mySwiper", {
 //Change Navbar Color and height on scrolling
 window.addEventListener("scroll", ()=>{
     const navbar = document.querySelectorAll('.navbar')[0];
-    const links = document.querySelectorAll('.link');
+    const nav_links = document.querySelectorAll('.link');
     const upArrow = document.querySelectorAll('.up-arrow-container')[0];
     if(window.scrollY > 0){
         navbar.classList.add('scrolled');
         upArrow.classList.add('popup');
-        links.forEach(link => {
+        nav_links.forEach(link => {
           link.style.color = 'var(--blackColor)'
         });
     }
     else{
         navbar.classList.remove('scrolled');
         upArrow.classList.remove('popup');
-        links.forEach(link => {
+        nav_links.forEach(link => {
           link.style.color = 'var(--lightTheme2)'
         })
     }
@@ -60,13 +60,4 @@ courseLinks.forEach((courseLink , courseLinkIndex) => {
 })
 
 
-//Dark Mode theme(not used currently in the site)
-const lightContentList1 = document.querySelectorAll('.light-content1');
-const themeButton = document.querySelectorAll('.fa-moon')[0];
-
-themeButton.addEventListener('click', () => {
-  lightContentList1.forEach(content=>{
-    content.classList.toggle('dark-mode');
-  })
-});
 
