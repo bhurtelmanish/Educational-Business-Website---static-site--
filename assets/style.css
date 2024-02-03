@@ -62,7 +62,7 @@ body {
 /* Navbar Color change while scroll */
 .scrolled {
   background-color: var(--lightTheme1);
-  height:80px;
+  height:90px;
   box-shadow: 0px 0px 8px rgb(227, 226, 226);
   border-bottom: none;
 }
@@ -86,19 +86,25 @@ body {
   /* font-size: 2rem; */
   font-weight: 500;
   font-family: var(--bodyFont2);
-  font-size: 2.3rem;
+  font-size: 2.4rem;
   display: flex;
   flex-direction: column;
 }
 
 .logo-title > .logo-title-child{
-  font-size: 17px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .logo > img {
   height: 5rem;
 }
-
+.courses-link{
+  color: var(--blackColorDark);
+}
+.courses-link:hover{
+  color: var(--blueColor);
+}
 .logo {
   display: flex;
   justify-content: center;
@@ -114,6 +120,7 @@ body {
   /* background-color: green; */
   height: 100%;
 }
+
 
 .links > li > a {
   font-size: 1.08rem;
@@ -173,7 +180,7 @@ a.link-active {
 }
 
 .fa-star {
-  color: var(--lightTheme1) !important;
+  color: var(--) !important;
   font-size: 1rem;
   cursor: pointer;
 }
@@ -325,13 +332,34 @@ a.link-active {
   position: relative;
 }
 
+.user-toggle{
+  color: var(--darkTheme2) !important;
+}
+
 @media (max-width: 1030px) {
+  .logo-title {
+    /* font-size: 2rem; */
+    font-weight: 500;
+    font-family: var(--bodyFont2);
+    font-size: 2.2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo-title > .logo-title-child{
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .logo > img {
+    height: 4.5rem;
+  }
   #award-gallery-title{
     padding-top: 3rem;
     margin-bottom: 2rem !important;
   }
   .links-container {
-    background-color: rgba(31, 31, 31, 0.92);
+    background-color: rgba(255, 255, 255, 0.97);
+    box-shadow: 0px 0px 20px rgb(228, 228, 228);
     width: 100vw;
     position: absolute;
     top: 0;
@@ -340,6 +368,7 @@ a.link-active {
     transition: 0.3s ease;
     /* animation: slideIn 0.1s ease; */
   }
+
   .links {
     flex-direction: column;
     padding: 5rem 0 4rem 0;
@@ -386,6 +415,22 @@ a.link-active {
 }
 
 @media (max-width: 780px) {
+  .logo-title {
+    /* font-size: 2rem; */
+    font-weight: 500;
+    font-family: var(--bodyFont2);
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo-title > .logo-title-child{
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .logo > img {
+    height: 4.3rem;
+  }
   .gallery {
     max-width: calc(var(--maxWidth) - 700px) !important;
   }
@@ -416,8 +461,21 @@ a.link-active {
   .navbar {
     padding: 0 1rem;
   }
+  .logo-title {
+    /* font-size: 2rem; */
+    font-weight: 500;
+    font-family: var(--bodyFont2);
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo-title > .logo-title-child{
+    font-weight: 400;
+    font-size: 15px;
+  }
   .logo > img {
-    height: 2.5rem;
+    height: 4rem;
   }
   .landing-contents {
     max-width: calc(var(--maxWidth) - 750px);
@@ -475,7 +533,7 @@ a.link-active {
   width: 100vw;
   background-color: var(--lightTheme2);
   color: rgb(63, 58, 100);
-  padding: 6rem 2rem 3rem 2rem;
+  padding: 2rem 1rem 3rem 1rem;
 }
 .feature-courses-header {
   display: flex;
@@ -499,7 +557,7 @@ a.link-active {
   /* background-color: green; */
   max-width: var(--maxWidth);
   margin: auto;
-  margin-top: 3rem;
+  margin-top: 1rem;
   display: flex;
   gap:2.5rem;
 }
@@ -891,6 +949,9 @@ a.link-active {
   .facilities-left-section {
     padding-right:0;
   }
+  .facilities-contents-container{
+    padding:2rem 0 2rem 0;
+  }
 }
 
 
@@ -983,7 +1044,7 @@ a.link-active {
 
 @media (max-width: 510px) {
   .team-image {
-    height: 15rem;
+    height: 20rem;
   }
   .team-header {
     font-size: 2rem;

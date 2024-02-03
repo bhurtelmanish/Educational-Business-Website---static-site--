@@ -17,16 +17,18 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
+
+const navbar = document.querySelectorAll('.navbar')[0];
+const nav_links = document.querySelectorAll('.link');
 //Change Navbar Color and height on scrolling
 window.addEventListener("scroll", ()=>{
-    const navbar = document.querySelectorAll('.navbar')[0];
-    const nav_links = document.querySelectorAll('.link');
+
     const upArrow = document.querySelectorAll('.up-arrow-container')[0];
     if(window.scrollY > 0){
         navbar.classList.add('scrolled');
         upArrow.classList.add('popup');
         nav_links.forEach(link => {
-          link.style.color = 'var(--blackColor)'
+          link.style.color = 'var(--blackColor)';
         });
     }
     else{
@@ -44,6 +46,9 @@ const links = document.querySelectorAll('.links-container')[0];
 bars.addEventListener('click', ()=>{
   bars.classList.toggle('fa-xmark');
   links.classList.toggle('active');
+  nav_links.forEach(link => {
+    link.classList.toggle('user-toggle');
+  });
 })
 
 
