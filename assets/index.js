@@ -52,17 +52,25 @@ bars.addEventListener('click', ()=>{
 })
 
 
-//Course Detail Selection
 const courseLinks = document.querySelectorAll('.course-links');
 const courseDescs = document.querySelectorAll('.course-detail-desc');
 
-courseLinks.forEach((courseLink , courseLinkIndex) => {
-  courseLink.addEventListener('click', ()=>{
-    courseDescs.forEach((courseDesc , courseDescIndex) => {
-      courseDesc.style.display = courseLinkIndex === courseDescIndex ? 'block' : 'none';
-    })
+const toggleCourseDetails = (courseLinkIndex) => {
+  courseDescs.forEach((courseDesc, courseDescIndex) => {
+    courseDesc.style.display = courseLinkIndex === courseDescIndex ? 'block' : 'none';
   });
-})
+};
 
+courseLinks.forEach((courseLink, courseLinkIndex) => {
+  courseLink.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent default behavior for anchor links
 
+    toggleCourseDetails(courseLinkIndex);
+  });
 
+  courseLink.addEventListener('touchend', (event) => {
+    event.preventDefault(); // Prevent default touch behavior
+
+    toggleCourseDetails(courseLinkIndex);
+  });
+});
