@@ -9,7 +9,7 @@
 }
 
 :root {
-  --navHeight : 100px;
+  --navHeight : 85px;
   --landingPageFont: "Poppins", sans-serif;
   --bodyFont: "Roboto", sans-serif;
   /* --darkTheme1: #2c2a43; */
@@ -40,14 +40,15 @@ body {
 }
 
 #home {
-  background-color: var(--lightTheme1);
+  background-color: var(--lightTheme1) !important;
   height: auto;
   width: 100vw;
   font-family: var(--bodyFont);
+  position: relative;
 }
 
 .navbar {
-  border-bottom: 1px solid rgb(142, 149, 202);
+  /* border-bottom: 1px solid rgb(142, 149, 202); */
   /* background-color: blue; */
   position: fixed;
   left: 0;
@@ -57,6 +58,7 @@ body {
   padding: 0 2rem;
   transition: 0.15s ease;
   z-index: 11000;
+  background-color: var(--lightTheme1);
 }
 
 /* Navbar Color change while scroll */
@@ -66,10 +68,12 @@ body {
   box-shadow: 0px 0px 8px rgb(227, 226, 226);
   border-bottom: none;
 }
+.scrolled-link{
 
+}
 /* Navbar Text color change while scroll */
-.scrolled-link {
-  color: var(--blackColor);
+.link {
+  color: var(--blackColor) !important;
 }
 
 .wrapper {
@@ -134,9 +138,9 @@ body {
 }
 
 /* Color of all the links in the Navbar */
-a.link {
+/* a.link {
   color: var(--lightTheme4);
-}
+} */
 
 .fa-moon,
 .fa-bars-staggered,
@@ -203,7 +207,10 @@ a.link-active {
 }
 
 .hero {
-  position: relative;
+  /* position: relative; */
+  /* margin-top: 2rem; */
+  position: absolute;
+  top:30px;
 }
 .up-arrow-container {
   background-color: var(--themeColor);

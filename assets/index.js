@@ -21,24 +21,24 @@ var swiper = new Swiper(".mySwiper", {
 const navbar = document.querySelectorAll('.navbar')[0];
 const nav_links = document.querySelectorAll('.link');
 //Change Navbar Color and height on scrolling
-window.addEventListener("scroll", ()=>{
+// window.addEventListener("scroll", ()=>{
 
-    const upArrow = document.querySelectorAll('.up-arrow-container')[0];
-    if(window.scrollY > 0){
-        navbar.classList.add('scrolled');
-        upArrow.classList.add('popup');
-        nav_links.forEach(link => {
-          link.style.color = 'var(--blackColor)';
-        });
-    }
-    else{
-        navbar.classList.remove('scrolled');
-        upArrow.classList.remove('popup');
-        nav_links.forEach(link => {
-          link.style.color = 'var(--lightTheme2)'
-        })
-    }
-})
+//     const upArrow = document.querySelectorAll('.up-arrow-container')[0];
+//     if(window.scrollY > 0){
+//         navbar.classList.add('scrolled');
+//         upArrow.classList.add('popup');
+//         nav_links.forEach(link => {
+//           link.style.color = 'var(--blackColor)';
+//         });
+//     }
+//     else{
+//         navbar.classList.remove('scrolled');
+//         upArrow.classList.remove('popup');
+//         nav_links.forEach(link => {
+//           link.style.color = 'var(--lightTheme2)'
+//         })
+//     }
+// })
 
 //Navbar Responsiveness
 const bars = document.querySelectorAll('.fa-bars-staggered')[0];
