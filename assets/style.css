@@ -438,6 +438,9 @@ a.link-active {
   .card{
     width:47% !important;
   }
+  .card-middle-section {
+    padding: 1rem 2rem 2.5rem 2rem !important;
+  }
 }
 
 @media (max-width: 780px) {
@@ -516,6 +519,9 @@ a.link-active {
   .gallery {
     padding-right:1rem;
     padding-left:1rem;
+  }
+  .card-middle-section {
+    padding: 1rem 2rem 1.5rem 2rem !important;
   }
 }
 
@@ -634,7 +640,7 @@ a.link-active {
   overflow: hidden;
 }
 .card-middle-section {
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 1rem 2rem 3rem 2rem;
 }
 .course-price{
   color: var(--themeColor);
@@ -996,7 +1002,7 @@ a.link-active {
     padding-right:0;
   }
   .facilities-contents-container{
-    padding:2rem 0 2rem 0;
+    padding:2rem 1rem  2rem 1rem;
   }
 }
 
@@ -2317,4 +2323,15 @@ img.images-gallery {
 #award-gallery-title {
   text-align: center;
   margin-bottom: 3rem;
+}
+
+img.trophy-award {
+  height: 10rem;
+  /* background-color: red; */
+}
+.last-footer-section {
+  display: flex;
+  gap:1rem;
+  /* background-color: red; */
+  height: fit-content;
 }
