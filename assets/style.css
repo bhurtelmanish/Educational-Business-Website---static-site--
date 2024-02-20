@@ -9,7 +9,7 @@
 }
 
 :root {
-  --navHeight : 85px;
+  --navHeight : 80px;
   --landingPageFont: "Poppins", sans-serif;
   --bodyFont: "Roboto", sans-serif;
   /* --darkTheme1: #2c2a43; */
@@ -48,7 +48,7 @@ body {
 }
 
 .navbar {
-  /* border-bottom: 1px solid rgb(142, 149, 202); */
+  box-shadow: 0px 0px 10px rgb(220, 220, 220);
   /* background-color: blue; */
   position: fixed;
   left: 0;
@@ -90,18 +90,18 @@ body {
   /* font-size: 2rem; */
   font-weight: 500;
   font-family: var(--bodyFont2);
-  font-size: 2.4rem;
+  font-size: 2rem;
   display: flex;
   flex-direction: column;
 }
 
 .logo-title > .logo-title-child{
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .logo > img {
-  height: 5rem;
+  height: 4.4rem;
 }
 .courses-link{
   color: var(--blackColorDark);
@@ -537,21 +537,21 @@ a.link-active {
     /* font-size: 2rem; */
     font-weight: 500;
     font-family: var(--bodyFont2);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     display: flex;
     flex-direction: column;
   }
   
   .logo-title > .logo-title-child{
     font-weight: 400;
-    font-size: 12.8px;
+    font-size: 12px;
   }
   .navbar{
-    padding-left:0.5rem !important;
-    padding-right:0.5rem !important;
+    padding-left:0.8rem !important;
+    padding-right:0.8rem !important;
   }
   .logo > img {
-    height: 3.4rem;
+    height: 3rem;
   }
   .landing-contents {
     max-width: calc(var(--maxWidth) - 700px);
