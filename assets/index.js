@@ -52,25 +52,69 @@ bars.addEventListener('click', ()=>{
 })
 
 
-const courseLinks = document.querySelectorAll('.course-links');
-const courseDescs = document.querySelectorAll('.course-detail-desc');
 
-const toggleCourseDetails = (courseLinkIndex) => {
-  courseDescs.forEach((courseDesc, courseDescIndex) => {
-    courseDesc.style.display = courseLinkIndex === courseDescIndex ? 'block' : 'none';
+//Courses Pagination 
+
+const list = document.querySelectorAll('.listPage')[0];
+const nodeList = document.querySelectorAll('.courses-section-main-courses .card');
+const cardList = Array.from(nodeList);
+
+let limit = 6;
+let thisPage = 1;
+
+const changePage = (i) => {
+  thisPage = i;
+  loadItem();
+}
+
+const listPage = () => {
+  let count = Math.ceil(cardList.length / limit);
+  list.innerHTML = '';
+
+  // Create Prev button
+  let prev = document.createElement('li');
+  prev.innerHTML = 'Prev';
+  prev.setAttribute('onclick', "changePage(" + (thisPage - 1) + ")");
+  list.appendChild(prev);
+
+  if (thisPage === 1) {
+    prev.classList.add('disabled');
+    prev.removeAttribute('onclick');
+  }
+
+  for (let i = 1; i <= count; i++) {
+    let newPage = document.createElement('li');
+    newPage.innerText = i;
+    if (i === thisPage) {
+      newPage.classList.add('li-active');
+    }
+    newPage.setAttribute('onclick', "changePage(" + i + ")");
+    list.appendChild(newPage);
+  }
+
+  // Create Next button
+  let next = document.createElement('li');
+  next.innerText = 'Next';
+  next.setAttribute('onclick', "changePage(" + (thisPage + 1) + ")");
+  list.appendChild(next);
+
+  if (thisPage === count) {
+    next.classList.add('disabled');
+    next.removeAttribute('onclick');
+  }
+}
+
+const loadItem = () => {
+  cardList.forEach((card , key) => {
+    let beginGet = limit * (thisPage - 1);
+    let endGet = limit * thisPage - 1;
+    if(key >= beginGet && key <= endGet){
+      card.style.display = 'flex';
+    }else{
+      card.style.display = 'none';
+    }
   });
-};
+  listPage();
+}
+loadItem();
 
-courseLinks.forEach((courseLink, courseLinkIndex) => {
-  courseLink.addEventListener('click', (event) => {
-    event.preventDefault(); // Prevent default behavior for anchor links
-
-    toggleCourseDetails(courseLinkIndex);
-  });
-
-  courseLink.addEventListener('touchend', (event) => {
-    event.preventDefault(); // Prevent default touch behavior
-
-    toggleCourseDetails(courseLinkIndex);
-  });
-});
